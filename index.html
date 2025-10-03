@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+</head>
+<style>
+#nam {
+    margin-left: 82px;
+    background-color: skyblue;
+}
+#mail {
+    margin-left: 26px;
+    background-color: skyblue;
+}
+#passw {
+    margin-left: 58px;
+    background-color: skyblue;
+}
+#cf {
+    background-color: skyblue;
+}
+#line1 {
+     background-color: skyblue;
+     margin-left: 12px;
+}
+#line2 {
+     background-color: skyblue;
+     margin-left: 12px;
+}
+#town {
+     background-color: skyblue;
+     margin-left: 42px;
+}
+#zip{
+     background-color: skyblue;
+     margin-left: 21px;
+}
+#sign {
+     background-color: rgb(107, 203, 241);
+}
+</style>
+<body>
+    <center><h1>Assignment 5</h1></center>
+    <h2>Task 1</h2>
+    <form action="action.php" method="get">
+    <fieldset>
+        <legend>The First Section</legend>
+        <br>
+        <fieldset>
+        <legend>The First Subsection</legend>
+       field 1 <input type="text" name="field">
+        </fieldset>
+        <br>
+        field 2 <input type="text" name="field">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Section ||</legend>
+        <br>
+           <fieldset>
+        <legend>Section ||-A</legend>
+       field 1 <input type="text" name="field">
+        </fieldset>
+        <br>
+            <fieldset>
+        <legend>Section ||-B</legend>
+       field 1 <input type="text" name="field">
+        </fieldset>
+    </fieldset>
+    <hr>
+    <h2>Task 2</h2>
+    <fieldset>
+        <legend>Login details</legend>
+        <br>
+        <label for="name">
+        Name: <input type="text" name="myname" id="name">
+        </label>
+        <br>
+        <br>
+          <label for="email">
+        Email: <input type="email" name="myemail" id="email">
+        </label>
+        <br>
+        <br>
+          <label for="password">
+        Password: <input type="password" name="mypassword" id="password">
+        </label>
+    </fieldset>
+     <fieldset>
+        <legend>Your feedback</legend>
+        <b>Please check all the emotions that apply to you:</b>
+        <br>
+        <br>
+       <label for="angry">
+        Angry <input type="checkbox" name="angry" id="angry">
+        </label>
+        <br>
+        <br>
+         <label for="sad">
+        Sad <input type="checkbox" name="sad" id="sad">
+        </label>
+        <br>
+        <br>
+         <label for="happy">
+        Happy <input type="checkbox" name="happy" id="happy">
+        </label>
+        <br>
+        <br>
+         <label for="ambivalent">
+        Ambivalent <input type="checkbox" name="ambivalent" id="ambivalent">
+        </label>
+        <br>
+        <br>
+        <b>How satisfied were you with our service?</b>
+        <br>
+        <br>
+        <label for="satisfied">
+            Very satisfied <input type="radio" name="very satisfied" id="satisfied">
+        </label>
+     </fieldset>
+     <hr>
+     <h2>Task 3</h2>
+     <fieldset>
+        <legend>Login</legend>
+        <label for="username">Username*
+            <br>
+            <input type="text" name="myusername" id="username">
+        </label>
+        <br>
+          <label for="pass">Password*
+            <br>
+            <input type="password" name="mypassword" id="pass">
+     </fieldset>
+     <br>
+     <fieldset>
+        <legend>Gender*</legend>
+        <label for="male">
+            <input type="radio" name="mygender" id="male"> Male 
+        </label>
+            <label for="female">
+            <input type="radio" name="mygender" id="female"> Female 
+        </label>
+     </fieldset>
+     <br>
+      <fieldset>
+        <legend>Programming Skills</legend>
+        <label for="java">
+            <input type="checkbox" name="myskills" id="java"> Java
+        </label>
+         <label for="c++">
+            <input type="checkbox" name="myskills" id="c++"> C++
+        </label>
+         <label for="c#">
+            <input type="checkbox" name="myskills" id="c#"> C#
+        </label>
+      </fieldset>
+      <br>
+       <fieldset>
+        <legend>Fruit</legend>
+        Choose a fruit:
+        <select name="fruits" id="fruits">
+            <option value="banana" selected>banana</option>
+              <option value="mango">mango</option>
+                <option value="apple">apple</option>
+                  <option value="grape">grape</option>
+        </select>
+       </fieldset>
+       <textarea name="comments" id="" cols="50" rows="10" placeholder="Enter your comment here"></textarea>
+       <br>
+       <input type="submit" name="Send" value="Send">
+       <input type="reset" name="reset" value="Reset" >
+       <hr>
+       <h2>Task 4</h2>
+       <h1>User Registration Form</h1>
+       <fieldset>
+        <legend style="color: rgb(127, 65, 171);">Personal Information</legend>
+        <label for="nam">
+          Name: 
+          <input type="text" name="details" id="nam">
+        </label>
+        <br>
+        <br>
+         <label for="mail">
+          Email Address: 
+          <input type="email" name="email" id="mail">
+        </label>
+        <br>
+        <br>
+         <label for="passw">
+          Password: 
+          <input type="password" name="password" id="passw">
+        </label>
+        <br>
+        <br>
+         <label for="cf">
+          Confirm Password:
+           <input type="password" name="cf" id="cf">
+        </label>
+       </fieldset>
+       <br>
+       <!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+          <fieldset>
+        <legend style="color: rgb(127, 65, 171);">Address Details</legend>
+        <label for="line1">
+          Address line one: 
+          <input type="text" name="AL1" id="line1">
+        </label>
+        <br>
+        <br>
+         <label for="line2">
+          Address line two: 
+          <input type="text" name="AL2" id="line2">
+        </label>
+        <br>
+        <br>
+         <label for="town">
+          Town / City: 
+          <input type="text" name="TC" id="town">
+        </label>
+        <br>
+        <br>
+         <label for="zip">
+          Zip / Post code:
+           <input type="text" name="ZPC" id="zip">
+        </label>
+       </fieldset>
+       <br>
+       <input type="submit" value="Sign In" id="sign">
+    </form>
+</body>
+</html>
